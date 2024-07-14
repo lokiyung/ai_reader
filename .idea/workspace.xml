@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1158c786-8b31-4f1b-a40f-e0794f8a25c3" name="更改" comment="2024/06/10开始">
-      <change afterPath="$PROJECT_DIR$/src/Qwen/QwenList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Qwen/QwenTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Qwen/Token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Qwen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/Fileutils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/1-peacefull.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/2-peacefull.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/3-peacefull.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/4-peacefull.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/5-peacefull.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/6-euphoria.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/7-Sinister.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/8-weak.MP3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Qwen/QwenList.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qwen/QwenList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Qwen/QwenTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qwen/QwenTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Qwen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qwen/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,32 +59,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.QwenTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.QwenTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Token.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.QwenList.executor": "Run",
+    "Python.QwenTest (1).executor": "Run",
+    "Python.QwenTest.executor": "Run",
+    "Python.Token.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Ai_reader\ai_reader\resource" />
       <recent name="D:\Ai_reader\ai_reader\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Token">
+  <component name="RunManager" selected="Python.QwenTest (1)">
+    <configuration name="QwenList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai_reader" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Qwen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Qwen/QwenList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="QwenTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai_reader" />
       <option name="ENV_FILES" value="" />
@@ -100,29 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QwenTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ai_reader" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Qwen" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Qwen/QwenTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Token" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai_reader" />
       <option name="ENV_FILES" value="" />
@@ -138,6 +148,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Qwen/Token.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai_reader" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Tools/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,10 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Token" />
         <item itemvalue="Python.QwenTest (1)" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.QwenList" />
+        <item itemvalue="Python.Token" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.QwenTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +253,8 @@
       <workItem from="1718031715463" duration="1619000" />
       <workItem from="1718521273273" duration="1365000" />
       <workItem from="1718523365376" duration="3861000" />
+      <workItem from="1719321073024" duration="2898000" />
+      <workItem from="1720445932734" duration="8530000" />
     </task>
     <task id="LOCAL-00001" summary="2024/06/10开始">
       <option name="closed" value="true" />
@@ -236,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718032446373</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2024/06/10开始">
+      <option name="closed" value="true" />
+      <created>1718901329381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718901329381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,8 +315,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ai_reader$main.coverage" NAME="main 覆盖结果" MODIFIED="1718032027411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ai_reader$main__1_.coverage" NAME="main (1) 覆盖结果" MODIFIED="1718522610938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ai_reader$QwenTest__1_.coverage" NAME="QwenTest (1) 覆盖结果" MODIFIED="1718524929470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Qwen" />
+    <SUITE FILE_PATH="coverage/ai_reader$QwenTest__1_.coverage" NAME="QwenTest (1) 覆盖结果" MODIFIED="1720454569203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Qwen" />
     <SUITE FILE_PATH="coverage/ai_reader$Token.coverage" NAME="Token 覆盖结果" MODIFIED="1718525158184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Qwen" />
     <SUITE FILE_PATH="coverage/ai_reader$QwenTest.coverage" NAME="QwenTest 覆盖结果" MODIFIED="1718522195306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Qwen" />
+    <SUITE FILE_PATH="coverage/ai_reader$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1720454436731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Tools" />
+    <SUITE FILE_PATH="coverage/ai_reader$QwenList.coverage" NAME="QwenList 覆盖结果" MODIFIED="1720451764220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Qwen" />
   </component>
 </project>

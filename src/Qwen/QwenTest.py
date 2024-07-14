@@ -1,65 +1,55 @@
 import random
 from http import HTTPStatus
 
-import dashscope
+import requests
+import os
+import re
 
-dashscope.api_key='sk-cc8790e15ef24a0c950fe829f0a7af55'
+from src.Qwen.QwenList import QwenList
+from src.Tools import FileUtils
 
-def sample_sync_call():
-    prompt_text = '用萝卜、土豆、茄子做饭，给我个菜谱。'
-    resp = dashscope.Generation.call(
-        model='qwen-turbo',
-        prompt=prompt_text
-    )
+api_key='sk-cc8790e15ef24a0c950fe829f0a7af55'
+# api_key = os.getenv("DASHSCOPE_API_KEY")
+url = 'https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation'
+headers = {'Content-Type': 'application/json',
+           'Authorization': f'Bearer {api_key}'
+           # ,'X-DashScope-SSE': 'enable'} 流式输出
+           }
 
-    if resp.status_code == HTTPStatus.OK:
-        print(resp.output)  # The output text
-        print(resp.usage)  # The usage information
-    else:
-        print(resp.code)  # The error code.
-        print(resp.message)  # The error message.
+messages = [
+    {
+        "role": "system",
+        "content": "你是一个擅长总结，文字功底很好的台本作家"
+    }
+]
 
-
-def sample_call_streaming():
-    prompt_text = '用萝卜、土豆、茄子做饭，给我个菜谱。'
-    response_generator = dashscope.Generation.call(
-        model='qwen-turbo',
-        prompt=prompt_text,
-        stream=True,
-        top_p=0.8)
-    # When stream=True, the return is Generator,
-    # need to get results through iteration
-    for response in response_generator:
-        if response.status_code == HTTPStatus.OK:
-            print(response.output)  # The output text
-            print(response.usage)  # The usage information
-        else:
-            print(response.code)  # The error code.
-            print(response.message)  # The error message.
-
-
-
-def sample_sync_call_streaming():
-    prompt_text = '用萝卜、土豆、茄子做饭，给我个菜谱。'
-    model=Qwen
-    response_generator = dashscope.Generation.call(
-        model=model,
-        prompt=prompt_text,
-        stream=True,
-        top_p=0.8)
-
-    head_idx = 0
-    for resp in response_generator:
-        paragraph = resp.output['text']
-        print("\r%s" % paragraph[head_idx:len(paragraph)], end='')
-        if(paragraph.rfind('\n') != -1):
-            head_idx = paragraph.rfind('\n') + 1
-
+    # 封装模型的响应函数
+def get_response(last_messages):
+    body = {
+        'model': 'qwen-turbo',
+        "input": {
+            "messages": last_messages
+        },
+        "parameters": {
+            "result_format": "message"
+        }
+    }
+    response = requests.post(url, headers=headers, json=body)
+    return response.json()
 
 
 
 if __name__ == '__main__':
-    # sample_sync_call()
-
-
-    sample_sync_call_streaming()
+    # 您可以在此修改对话轮数，当前为3轮对话
+    for i in range(3):
+        context=FileUtils.read_file(r'C:\Users\lilyung\Desktop\new.txt')
+        UserInput = context
+        messages.append({
+            "role": "user",
+            "content": UserInput
+        })
+        response = get_response(messages)
+        assistant_output = response['output']['choices'][0]['message']
+        print("用户输入：", UserInput)
+        print(f"模型输出：{assistant_output['content']}\n")
+        messages.append(assistant_output)
